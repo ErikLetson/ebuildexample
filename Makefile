@@ -17,7 +17,7 @@ clean:
 
 .PHONY: install
 install: ebuildexample
-	mkdir -p $(DESTDIR)
+	mkdir -p $(DESTDIR)$(PREFIX)
 	cp $< $(DESTDIR)$(PREFIX)/ebuildexample
 
 .PHONY: uninstall
