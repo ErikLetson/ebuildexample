@@ -3,8 +3,6 @@ CFLAGS=-I.
 SRC=$(wildcard *.c)
 OBJ=$(SRC:.c=.o)
 
-PREFIX=/usr/local/bin
-
 %.o: %.c
 	$(CC) -c -o $@ $< $(CFLAGS)
 
@@ -17,8 +15,8 @@ clean:
 
 .PHONY: install
 install: ebuildexample
-	mkdir -p $(DESTDIR)$(PREFIX)
-	cp $< $(DESTDIR)$(PREFIX)/ebuildexample
+	mkdir -p $(DESTDIR)
+	cp $< $(DESTDIR)/ebuildexample
 
 .PHONY: uninstall
 uninstall:
