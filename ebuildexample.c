@@ -2,7 +2,7 @@
 
 int main() {
 
-	printf("Hello, World! This is a simple C program for use with my YouTube ebuild video.\n");
+	printf("It worked! Thanks for watching my YouTube video!\n");
 
 	return 0;
 
